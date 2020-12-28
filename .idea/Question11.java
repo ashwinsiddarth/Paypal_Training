@@ -12,14 +12,14 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.print("Length of list : ");
         n = sc.nextInt();
-        System.out.print("Input: [");
+
         for(int i=1;i<=n;i++){
             list.add(i);
         }
         for(int i=0;i<list.size();i++){
             System.out.println(list.get(i));
         }
-        System.out.println("]");
+        System.out.print("Input:"+list);
         swap(list);
 
     }
@@ -36,10 +36,8 @@ public class Main {
                 list.set(i, head);
                 list.set(i - 1, next);
             }
-            System.out.println("Output : ");
-            for (int i = 0; i < list.size(); i++) {
-                System.out.println(list.get(i));
-            }
+            System.out.println("Output : "+list);
+
         }
     }
 }
